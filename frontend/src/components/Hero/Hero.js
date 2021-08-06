@@ -7,7 +7,10 @@ const Hero = ({ imagePath }) => {
       className={styles.hero}
       style={{ backgroundImage: `url(${imagePath})` }}
     >
-      <div className={styles.logo}>
+      <div
+        className={styles.logo}
+        onClick={() => alert('You have clicked the Rooster Grin logo!')}
+      >
         <LogoWhite />
       </div>
       <div className={styles.heroContent}>

@@ -11,7 +11,9 @@ const SectionFull = ({ alt, bodyText, imagePath, title }) => (
         <p style={!bodyText ? { display: 'none' } : { display: 'block' }}>
           {bodyText}
         </p>
-        <button>Button Button</button>
+        <button onClick={() => alert('You have clicked a section button!')}>
+          Button Button
+        </button>
       </div>
     </div>
   </div>

@@ -8,28 +8,40 @@ const HomeIcons = () => {
   return (
     <div className={styles.container}>
       <div className={styles.topLeft}>
-        <div className={styles.logo}>
+        <div
+          className={styles.logo}
+          onClick={() => alert('You have clicked an icon!')}
+        >
           <HomeExpertise />
         </div>
-        <h4>Lorem</h4>
+        <h4 onClick={() => alert('You have clicked an icon!')}>Lorem</h4>
       </div>
       <div className={styles.topRight}>
-        <div className={styles.logo}>
+        <div
+          className={styles.logo}
+          onClick={() => alert('You have clicked an icon!')}
+        >
           <HomeHygiene />
         </div>
-        <h4>Lorem ipsum</h4>
+        <h4 onClick={() => alert('You have clicked an icon!')}>Lorem ipsum</h4>
       </div>
       <div className={styles.bottomLeft}>
-        <div className={styles.logo}>
+        <div
+          className={styles.logo}
+          onClick={() => alert('You have clicked an icon!')}
+        >
           <HomeLab />
         </div>
-        <h4>Lorem ipsum</h4>
+        <h4 onClick={() => alert('You have clicked an icon!')}>Lorem ipsum</h4>
       </div>
       <div className={styles.bottomRight}>
-        <div className={styles.logo}>
+        <div
+          className={styles.logo}
+          onClick={() => alert('You have clicked an icon!')}
+        >
           <HomeRetention />
         </div>
-        <h4>Lorem</h4>
+        <h4 onClick={() => alert('You have clicked an icon!')}>Lorem</h4>
       </div>
     </div>
   );

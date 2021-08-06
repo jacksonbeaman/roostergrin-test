@@ -6,10 +6,16 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <h5>Follow Us:</h5>
-      <div className={styles.logo + ' ' + styles.logoLeft}>
+      <div
+        className={styles.logo + ' ' + styles.logoLeft}
+        onClick={() => alert('You have clicked a logo!')}
+      >
         <LogoInstagram />
       </div>
-      <div className={styles.logo + ' ' + styles.logoRight}>
+      <div
+        className={styles.logo + ' ' + styles.logoRight}
+        onClick={() => alert('You have clicked a logo!')}
+      >
         <LogoFacebook />
       </div>
     </footer>

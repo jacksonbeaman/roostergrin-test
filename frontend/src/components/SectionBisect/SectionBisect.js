@@ -7,7 +7,9 @@ const SectionBisect = ({ bodyText, icons, imagePath, title }) => {
       <div className={styles.colLeft}>
         <h2 style={{ color: '#3e3e3e' }}>{title}</h2>
         <p>{bodyText}</p>
-        <button>{'>'} Lorem ipsum</button>
+        <button onClick={() => alert('You have clicked a section button!')}>
+          {'>'} Lorem ipsum
+        </button>
       </div>
       {icons ? (
         <div className={styles.iconsCol}>
