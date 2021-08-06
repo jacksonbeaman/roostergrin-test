@@ -49,6 +49,10 @@
   margin-top: 0;
 }
 
+.colLeft button:hover {
+  color: rgb(255, 114, 24);
+}
+
 .iconsCol {
   width: 50%;
   padding: 52px 34px;

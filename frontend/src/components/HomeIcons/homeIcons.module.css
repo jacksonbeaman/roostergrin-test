@@ -19,6 +19,7 @@
   border-radius: 100%;
   overflow: hidden;
   padding: 15px;
+  cursor: pointer;
 }
 
 .topLeft .logo {
@@ -69,6 +70,7 @@
 h4 {
   text-transform: uppercase;
   color: #3e3e3e;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {

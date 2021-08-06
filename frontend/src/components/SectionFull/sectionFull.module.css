@@ -63,6 +63,11 @@ button {
   font-size: 1rem;
 }
 
+.content button:hover,
+.contentAlt button:hover {
+  background-color: rgb(98, 52, 117);
+}
+
 @media only screen and (max-width: 768px) {
   .content h2,
   .contentAlt h2 {
