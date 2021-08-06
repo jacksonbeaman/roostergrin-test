@@ -7,9 +7,7 @@ const SectionFull = ({ alt, bodyText, imagePath, title }) => (
       style={{ backgroundImage: `url(${imagePath})` }}
     >
       <div className={`${alt ? styles.contentAlt : styles.content}`}>
-        <h2 style={alt ? { fontSize: '2.8rem' } : { fontSize: '2.5rem' }}>
-          {title}
-        </h2>
+        <h2>{title}</h2>
         <p style={!bodyText ? { display: 'none' } : { display: 'block' }}>
           {bodyText}
         </p>

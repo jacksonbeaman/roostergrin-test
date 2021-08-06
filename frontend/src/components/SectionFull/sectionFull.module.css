@@ -39,8 +39,14 @@
   padding: 0 64px;
 }
 
-h2 {
+.content h2 {
   font-size: 2.5rem;
+  color: rgb(98, 52, 117);
+  text-transform: uppercase;
+}
+
+.contentAlt h2 {
+  font-size: 2.8rem;
   color: rgb(98, 52, 117);
   text-transform: uppercase;
 }
@@ -55,4 +61,66 @@ button {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-size: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .content h2,
+  .contentAlt h2 {
+    font-size: 1.7rem;
+  }
+
+  .content {
+    padding-right: 64px;
+  }
+  .contentAlt {
+    padding-left: 64px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .content h2,
+  .contentAlt h2 {
+    font-size: 1.5rem;
+  }
+
+  .contentAlt {
+    padding: 0 32px;
+  }
+
+  .content {
+    text-align: justify;
+    padding: 0 16px 0 64px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .image {
+    min-height: 100vh;
+    background-position: 70% center;
+  }
+
+  .content,
+  .contentAlt {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* Previously used width: 30%; no padding */
+    width: 80%;
+    padding: 0 32px;
+  }
+
+  .contentAlt {
+    top: 50%;
+  }
+
+  .content h2 {
+    color: white;
+  }
+
+  .content h2,
+  .contentAlt h2 {
+    font-size: 1.5rem;
+  }
 }
