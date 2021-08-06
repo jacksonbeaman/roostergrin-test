@@ -15,7 +15,9 @@ const Hero = ({ imagePath }) => {
           <span>Welcome To</span>
           <br></br>Rooster Grin
         </h1>
-        <button>Button Button</button>
+        <button onClick={() => alert('You have clicked the hero button!')}>
+          Button Button
+        </button>
       </div>
     </div>
   );

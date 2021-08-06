@@ -5,7 +5,7 @@ const SectionBisect = ({ bodyText, icons, imagePath, title }) => {
   return (
     <div className={styles.container}>
       <div className={styles.colLeft}>
-        <h2>{title}</h2>
+        <h2 style={{ color: '#3e3e3e' }}>{title}</h2>
         <p>{bodyText}</p>
         <button>{'>'} Lorem ipsum</button>
       </div>

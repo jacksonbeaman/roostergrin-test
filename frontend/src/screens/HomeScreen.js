@@ -1,6 +1,7 @@
 import Hero from '../components/Hero/Hero';
 import SectionBisect from '../components/SectionBisect/SectionBisect';
 import SectionFull from '../components/SectionFull/SectionFull';
+import SectionCarousel from '../components/SectionCarousel/SectionCarousel';
 import Footer from '../components/Footer/Footer';
 
 const HomeScreen = () => {
@@ -24,6 +25,7 @@ const HomeScreen = () => {
         imagePath='/images/banner-2.jpg'
         title={sectionTitle1}
       />
+      <SectionCarousel />
       <Footer />
     </>
   );

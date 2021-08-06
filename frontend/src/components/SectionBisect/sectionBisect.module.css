@@ -15,7 +15,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: seashell;
+  background-color: #ffffff;
   text-align: left;
   padding: 64px;
   width: 50%;
@@ -36,6 +36,9 @@
   font-size: 2.5rem;
 }
 
+.colLeft p {
+  color: #3e3e3e;
+}
 .colLeft button {
   color: rgb(98, 52, 117);
   background-color: transparent;

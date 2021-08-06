@@ -1,0 +1,116 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1100px;
+  min-height: 55vh;
+  background-color: #ffffff;
+}
+
+.colRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  padding: 64px;
+  width: 50%;
+}
+
+.colLeft {
+  text-align: left;
+  padding: 64px;
+  width: 50%;
+}
+
+.colLeft h2 {
+  color: #3e3e3e;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+.colRight h4 {
+  color: rgb(98, 52, 117);
+}
+
+.dotContainer {
+  width: 62px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: rgb(255, 229, 103);
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: rgb(255, 199, 26);
+}
+
+.commentContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.commentContainer i {
+  padding: 15px;
+  font-size: 1.75rem;
+  color: rgb(98, 52, 117);
+  cursor: pointer;
+  transition: 0.6s ease;
+}
+
+.commentContainer i:hover {
+  color: rgb(255, 114, 24);
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    display: inline-block;
+    min-height: 25vh;
+  }
+
+  .colLeft {
+    width: 100%;
+  }
+
+  .colRight {
+    width: 100%;
+  }
+
+  .colLeft h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .colLeft {
+    min-height: 50vh;
+    padding-top: 108px;
+    text-align: center;
+  }
+
+  .colRight {
+    padding: 10px;
+    min-height: 50vh;
+    position: relative;
+  }
+
+  .colLeft h2 {
+    font-size: 1.5rem;
+  }
+}
