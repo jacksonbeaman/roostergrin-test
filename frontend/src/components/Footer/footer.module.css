@@ -1,0 +1,29 @@
+.footer {
+  box-sizing: border-box;
+  background-color: rgb(250, 250, 250);
+  height: 142px;
+  position: relative;
+  text-align: center;
+  padding: 35px;
+}
+
+.logo {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  top: 67px;
+  left: 50%;
+}
+
+.logoLeft {
+  transform: translate(-58px, 0);
+}
+
+.logoRight {
+  transform: translate(12px, 0);
+}
+
+h5 {
+  color: black;
+  margin: 0 auto;
+}
