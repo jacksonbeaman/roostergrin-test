@@ -74,31 +74,16 @@ const SectionCarousel = () => {
 
         <div className={styles.dotContainer}>
           <span
-            className={styles.dot}
+            className={`${reviewNum === 0 ? styles.dotActive : styles.dot}`}
             onClick={() => setReviewNum(0)}
-            style={
-              reviewNum === 0
-                ? { backgroundColor: '#ffc71a' }
-                : { backgroundColor: '#ffe567' }
-            }
           ></span>
           <span
-            className={styles.dot}
+            className={`${reviewNum === 1 ? styles.dotActive : styles.dot}`}
             onClick={() => setReviewNum(1)}
-            style={
-              reviewNum === 1
-                ? { backgroundColor: '#ffc71a' }
-                : { backgroundColor: '#ffe567' }
-            }
           ></span>
           <span
-            className={styles.dot}
+            className={`${reviewNum === 2 ? styles.dotActive : styles.dot}`}
             onClick={() => setReviewNum(2)}
-            style={
-              reviewNum === 2
-                ? { backgroundColor: '#ffc71a' }
-                : { backgroundColor: '#ffe567' }
-            }
           ></span>
         </div>
       </div>
